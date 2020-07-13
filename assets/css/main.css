@@ -2747,10 +2747,10 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
+		.spotlight .image img {
+			border-radius: 0;
+			width: 100%;
+		}
 
 		.spotlight .content {
 			padding: 4em;
@@ -2833,6 +2833,11 @@ input, select, textarea {
 
 			.spotlight .image {
 				width: 100%;
+			}
+
+			.spotlight .image img {
+				width: 90%;
+				margin: auto;
 			}
 
 			.spotlight .content {
