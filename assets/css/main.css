@@ -3052,7 +3052,7 @@ input, select, textarea {
 			}
 
 			.express {
-				font-size: 2em !important;
+				font-size: 1.2em !important;
 			}
 		}
 
@@ -3342,6 +3342,10 @@ input, select, textarea {
 
 				.wrapper.style3 .features li {
 					border-top-color: rgba(0, 0, 0, 0.125);
+				}
+
+				.wrapper.style3 {
+					padding: 4em 0 2em;
 				}
 
 			}
