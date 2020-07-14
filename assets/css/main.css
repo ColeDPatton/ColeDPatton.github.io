@@ -1724,37 +1724,37 @@ input, select, textarea {
 						padding: 0 0 0 2.25em;
 					}
 
-					.row.gtr-150.gtr-uniform {
-						margin-top: -2.25em;
-					}
-
-						.row.gtr-150.gtr-uniform > * {
-							padding-top: 2.25em;
-						}
-
-				.row.gtr-200 {
-					margin-top: 0;
-					margin-left: -3em;
+				.row.gtr-150.gtr-uniform {
+					margin-top: -2.25em;
 				}
 
-					.row.gtr-200 > * {
-						padding: 0 0 0 3em;
+					.row.gtr-150.gtr-uniform > * {
+						padding-top: 2.25em;
 					}
 
-					.row.gtr-200.gtr-uniform {
-						margin-top: -3em;
-					}
+			.row.gtr-200 {
+				margin-top: 0;
+				margin-left: -3em;
+			}
 
-						.row.gtr-200.gtr-uniform > * {
-							padding-top: 3em;
-						}
+				.row.gtr-200 > * {
+					padding: 0 0 0 3em;
+				}
+
+				.row.gtr-200.gtr-uniform {
+					margin-top: -3em;
+				}
+
+				.row.gtr-200.gtr-uniform > * {
+					padding-top: 3em;
+				}
 
 		}
 
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: left;
 	}
 
 	header p {
@@ -2913,6 +2913,14 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 980px) {
+
+			.spotlight .actions {
+				justify-content: center;
+			}
+
+		}
+
 		@media screen and (max-width: 736px) {
 
 			.spotlight .content {
@@ -2932,35 +2940,25 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
-	.skillContainers div {
+	.skillContainers {
 		margin: auto;
+		width: 80%
+	}
+
+	.skillContainers div {
+		/* margin: auto; */
 		margin-top: 0;
 	}
 
 	.skillContainers h2 {
 		width: 12em;
 	}
+
 	.skillContainers h4 {
 		margin-bottom: 1em;
 		margin-top: -1em;
 	}
 
-	.skillContainers .skillsCard {
-		background-color: #17191b;
-   		box-shadow: 0px 2px 5px 2px #111315;
-		padding: 2em 2em 0;
-		width: fit-content;
-		border-radius: 8px;
-	}
-
-	@media screen and (max-width: 980px) {
-
-		.skillContainers .skillsCard {
-			width: 100%;
-		}
-
-	}
-
 	.skillContainers ul {
 		list-style: none;
 		padding-left: 0;
@@ -2971,17 +2969,26 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		display: flex;
-		justify-content: center;
 		flex-wrap: wrap;
-		width: fit-content;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.skillContainers ul li {
 		padding-left: 0;
 		color: #011715;
-		margin: 0 1em 2em;
+		margin: 0 0 2em;
+		text-align: center;
+	}
+
+	.skillContainers ul .largeIcon {
+		width: 10%;
+	}
+
+	.skillContainers ul .smallIcon {
+		width: 20%;
+	}
+
+	.skillContainers ul li img {
+		width: 75%;
 	}
 
 	.skillContainers .icon:before {
@@ -2991,7 +2998,7 @@ input, select, textarea {
 	.skillContainers .express {
 		margin-top: .4em;
 		margin-bottom: .7em;
-		font-size: 2.2em;
+		font-size: 2.5vw;
 		color: #aaaaaa !important;
 		font-weight: 600;
 		letter-spacing: normal;
@@ -3000,20 +3007,36 @@ input, select, textarea {
 	.skillContainers .skillText {
 		height: 0;
 		margin: 0;
+		font-size: 24px;
+		font-weight: 600;
+		color: #e71f3a;
+	}
+
+	.skillContainers .largeIcon .skillText {
+		opacity: 0;
+		padding-top: 1em;
+		transition: opacity .2s ease-in, padding-top .2s ease-in;
+		-moz-transition: opacity .2s ease-in, padding-top .2s ease-in;
+		-webkit-transition: opacity .2s ease-in, padding-top .2s ease-in;
+		-ms-transition: opacity .2s ease-in, padding-top .2s ease-in;
+	}
+
+	.skillContainers .smallIcon .skillText {
 		opacity: 0;
 		line-height: inherit;
 		transition: opacity .2s ease-in, line-height .2s ease-in;
 		-moz-transition: opacity .2s ease-in, line-height .2s ease-in;
 		-webkit-transition: opacity .2s ease-in, line-height .2s ease-in;
 		-ms-transition: opacity .2s ease-in, line-height .2s ease-in;
-		font-size: 24px;
-		font-weight: 600;
-		color: #e71f3a;
 	}
 
 	.showLargeSkillText {
 		opacity: 1 !important;
-		transition: opacity .2s ease-in !important;
+		padding-top: 0 !important;
+		transition: opacity .2s ease-in, padding-top .2s ease-in !important;
+		-moz-transition: opacity .2s ease-in, padding-top .2s ease-in !important;
+		-webkit-transition: opacity .2s ease-in, padding-top .2s ease-in !important;
+		-ms-transition: opacity .2s ease-in, padding-top .2s ease-in !important;
 	}
 
 	.showSmallSkillText {
@@ -3069,7 +3092,6 @@ input, select, textarea {
 		.wrapper.style1 .skillContainers h2, .wrapper.style1 .skillContainers h3{
 			border-bottom: solid 4px #aaaaaa;
 			margin-bottom: 1em;
-			margin: auto auto 1em;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3080,6 +3102,18 @@ input, select, textarea {
 
 			.wrapper.style1 .skillContainers h2, .wrapper.style1 .skillContainers h3{
 				width: 40%;
+			}
+
+			.skillContainers ul .largeIcon {
+				width: 20%;
+			}
+
+			.skillContainers ul .smallIcon {
+				width: 30%;
+			}
+		
+			.express {
+				font-size: 1.3em !important;
 			}
 
 		}
@@ -3094,19 +3128,17 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			.skillContainers .largeIcon img {
-				width: 75%;
-				height: 75%;
-			}
-
-			.skillContainers .smallIcon img {
-				width: 75%;
-				height: 75%;
-			}
-
 			.skillContainers ul li {
 				margin: 0 0 2em;
 				width: 50%;
+			}
+			
+			.skillContainers ul .largeIcon {
+				width: 30%;
+			}
+
+			.skillContainers ul .smallIcon {
+				width: 45%;
 			}
 
 			.express {
