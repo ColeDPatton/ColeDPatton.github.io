@@ -1,5 +1,5 @@
 Cole Patton
-<a href="https://coledpatton.github.io" >View Portfolio!</a>
+<a href="https://coledpatton.github.io">View Portfolio!</a>
 
 This portfolio is a way for me to show off some of my skills and works to potentialemployers. Feel free to contact me through the form at the bottom of the portfolio, or email me directly at patton1502@gmail.com
 
