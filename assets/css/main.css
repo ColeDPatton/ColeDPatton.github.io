@@ -2677,6 +2677,13 @@ input, select, textarea {
 				padding-bottom: 0;
 			}
 
+			.features .jobDescription li {
+				padding: 0;
+				display: list-item;
+				/* text-align: justify; */
+				list-style-type: disc;
+			}
+
 			@media screen and (max-width: 980px) {
 
 				.features li:before {
@@ -4132,9 +4139,9 @@ input, select, textarea {
 			width: 70%;
 		}
 
-			#cta .inner header p {
-				color: inherit;
-			}
+		#cta .inner header p {
+			color: inherit;
+		}
 
 		#cta .inner .actions {
 			-moz-order: 2;
@@ -4260,6 +4267,17 @@ input, select, textarea {
 
 	#footer .contact h2 {
 		color: #01ffea;
+	}
+
+	#footer input:-webkit-autofill,
+	#footer input:-webkit-autofill:hover, 
+	#footer input:-webkit-autofill:focus, 
+	#footer input:-webkit-autofill:active  {
+		-webkit-box-shadow: 0 0 0 30px #25282b inset !important;
+	}
+
+	#footer input:-webkit-autofill {
+		-webkit-text-fill-color: #fff !important;
 	}
 
 	#footer .icons {
