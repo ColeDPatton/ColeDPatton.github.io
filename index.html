@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html lang="en">
 
 <head>
@@ -19,7 +15,10 @@
 
 	<title>Cole Patton</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Hi! I'm Cole Patton. I'm a Software Engineer 
+	and Web Developer, and this is my portfolio. See my skills, check out my projects, 
+	and get in touch if you would like to work together">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -50,7 +49,7 @@
 			<nav id="mobileNav" class="mobile">
 				<ul>
 					<li class="special">
-						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<a href="#menu" class="menuToggle" aria-label="Open Menu"><span>Menu</span></a>
 						<div id="menu">
 							<ul>
 								<li><a href="#banner" class="scrolly">Home</a></li>
@@ -181,7 +180,7 @@
 				<div class="underline"></div>
 			</div>
 			<section class="spotlight">
-				<div class="image"><img src="images/Vibe-Share-Thumbnail@2x.jpg" alt="" /></div>
+				<div class="image"><img src="images/Vibe-Share-Thumbnail.jpg" alt="" /></div>
 				<div class="content">
 					<h2>Vibe Share</h2>
 					<p>A typical social media site that utilizes Spotify's API to let users add song clips to their
@@ -199,7 +198,7 @@
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img src="images/Dumb-Gaming-Thumbnail@2x.jpg" alt="" /></div>
+				<div class="image"><img src="images/Dumb-Gaming-Thumbnail.jpg" alt="" /></div>
 				<div class="content">
 					<h2>DumbGaming</h2>
 					<p>A website with a simple platformer game where players compete for the fastest time
@@ -216,7 +215,7 @@
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img src="images/IT-Management-Thumbnail@2x.jpg" alt="" /></div>
+				<div class="image"><img src="images/IT-Management-Thumbnail.jpg" alt="" /></div>
 				<div class="content">
 					<h2>IT Management Software</h2>
 					<p>A task manager and ticket tracker. Businesses can place tickets,
@@ -231,7 +230,7 @@
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img src="images/Play-Pal-Thumbnail@2x.jpg" alt="" /></div>
+				<div class="image"><img src="images/Play-Pal-Thumbnail.jpg" alt="" /></div>
 				<div class="content">
 					<h2>Play Pal</h2>
 					<p>An Android app for users to find people to play video games with.
@@ -366,16 +365,19 @@
 			<form action="https://formspree.io/mqkygnry" method="POST">
 				<div class="row gtr-uniform">
 					<div class="col-6 col-12-xsmall">
-						<h4>Name</h4>
-						<input type="text" name="name" id="name" value="" placeholder="Name">
+						<label id=nameLabel>Name</label>
+						<input type="text" name="name" id="name" value="" placeholder="Name"
+							aria-labelledby="nameLabel">
 					</div>
 					<div class="col-6 col-12-xsmall">
-						<h4>Email</h4>
-						<input type="text" name="replyto" id="email" value="" placeholder="Name">
+						<label id=emailLabel>Email</label>
+						<input type="text" name="replyto" id="email" value="" placeholder="Name"
+							aria-labelledby="emailLabel">
 					</div>
 					<div class="col-12">
-						<h4>Message</h4>
-						<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+						<label id=messageLabel>Message</label>
+						<textarea name="message" id="message" placeholder="Enter your message" rows="6"
+							aria-labelledby="messageLabel"></textarea>
 					</div>
 					<div class="col-12">
 						<ul class="actions">
@@ -386,12 +388,13 @@
 				</div>
 			</form>
 			<ul class="icons">
-				<li><a href="https://github.com/ColeDPatton/" class="icon brands fa-github"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://www.linkedin.com/in/cole-d-patton/" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:patton1502@gmail.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
+				<li><a href="https://github.com/ColeDPatton/" class="icon brands fa-github" aria-label="Github">
+						<span class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/cole-d-patton/" class="icon brands fa-linkedin"
+						aria-label="LinkedIn">
+						<span class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:patton1502@gmail.com" class="icon solid fa-envelope" aria-label="Email">
+						<span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>© Cole Patton</li>

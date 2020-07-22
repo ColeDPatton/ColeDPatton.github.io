@@ -2609,46 +2609,6 @@ input, select, textarea {
 			text-align: left;
 			width: 100%;
 		}
-/* 
-			.features li:nth-child(1) {
-				background-color: rgba(0, 0, 0, 0.07);
-			}
-
-			.features li:nth-child(2) {
-				background-color: rgba(0, 0, 0, 0.14);
-			}
-
-			.features li:nth-child(3) {
-				background-color: rgb(80, 83, 145);
-			}
-
-			.features li:nth-child(4) {
-				background-color: rgba(0, 0, 0, 0.21);
-			}
-
-			.features li:nth-child(5) {
-				background-color: rgba(0, 0, 0, 0.175);
-			}
-
-			.features li:nth-child(6) {
-				background-color: rgba(0, 0, 0, 0.21);
-			} */
-
-			.features li:nth-child(7) {
-				background-color: rgba(0, 0, 0, 0.245);
-			}
-
-			.features li:nth-child(8) {
-				background-color: rgba(0, 0, 0, 0.28);
-			}
-
-			.features li:nth-child(9) {
-				background-color: rgba(0, 0, 0, 0.315);
-			}
-
-			.features li:nth-child(10) {
-				background-color: rgba(0, 0, 0, 0.35);
-			}
 
 			.features li:before {
 				display: block;
@@ -2906,26 +2866,6 @@ input, select, textarea {
 				text-align: center;
 				width: 100%;
 			}
-			/* .spotlight:nth-child(1) {
-				background: linear-gradient(90deg, #1b2027, #232a32);
-			}
-
-			.spotlight:nth-child(2) {
-				background: linear-gradient(90deg, #212a31, #1b2027);
-			}
-
-			.spotlight:nth-child(3) {
-				background: linear-gradient(90deg, #1b2027, #232a32);
-			}
-
-			.spotlight:nth-child(4) {
-				background: linear-gradient(90deg, #212a31, #1b2027);
-			}
-
-			.spotlight:nth-child(5) {
-				background: linear-gradient(90deg, #1b2027, #232a32);
-			 }
-			 */
 
 		}
 
@@ -4258,6 +4198,16 @@ input, select, textarea {
 		padding: 6em 6em 2em ;
 		background-color: #1d242a;
 		text-align: center;
+	}
+
+	#footer label {
+		margin-bottom: 1em;
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.5em;
+		font-weight: 800;
+		letter-spacing: 0.125em;
+		text-transform: uppercase;
 	}
 
 	#footer .contact {
