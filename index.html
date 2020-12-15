@@ -3,417 +3,475 @@
 <html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171826103-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171826103-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-		gtag('config', 'UA-171826103-3');
-	</script>
+        gtag('config', 'UA-171826103-3');
+    </script>
 
-	<title>Cole Patton</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Hi! I'm Cole Patton. I'm a Software Engineer 
+    <title>Cole Patton</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hi! I'm Cole Patton. I'm a Software Engineer 
 	and Web Developer, and this is my portfolio. See my skills, check out my projects, 
 	and get in touch if you would like to work together">
-	<meta name="keywords" content="cole,patton,portfolio,software,engineer,engineering,programing">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta name="keywords" content="cole,patton,portfolio,software,engineer,engineering,programing">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body class="landing is-preload">
 
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
+    <!-- Header -->
+    <header id="header" class="header">
+        <a class="name" href="index.html">Cole Patton</a>
+        <nav id="desktopNav" class="desktopNav">
+            <ul>
+                <li><a href="#hero" class="scrolly">Home</a></li>
+                <li><a href="#skills" class="scrolly">Skills</a></li>
+                <li><a href="#projects" class="scrolly">Projects</a></li>
+                <li><a href="#workHistory" class="scrolly">Work History</a></li>
+                <li><a href="#aboutMe" class="scrolly">About Me</a></li>
+                <li><a href="#contactMe" class="scrolly">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="mobileNav" class="mobileNav">
+            <a href="#menu" class="menuToggle" aria-label="Open Menu"><span>Menu</span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="#banner" class="scrolly">Home</a></li>
+                    <li><a href="#one" class="scrolly">Skills</a></li>
+                    <li><a href="#two" class="scrolly">Projects</a></li>
+                    <li><a href="#three" class="scrolly">Work History</a></li>
+                    <li><a href="#four" class="scrolly">About Me</a></li>
+                    <li><a href="#footer" class="scrolly">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Cole Patton</a></h1>
-			<nav id="desktopNav" class="desktop">
-				<ul>
-					<li class="special">
-						<ul>
-							<li><a href="#banner" class="scrolly">Home</a></li>
-							<li><a href="#one" class="scrolly">Skills</a></li>
-							<li><a href="#two" class="scrolly">Projects</a></li>
-							<li><a href="#three" class="scrolly">Work History</a></li>
-							<li><a href="#four" class="scrolly">About Me</a></li>
-							<li><a href="#footer" class="scrolly">Contact</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<nav id="mobileNav" class="mobile">
-				<ul>
-					<li class="special">
-						<a href="#menu" class="menuToggle" aria-label="Open Menu"><span>Menu</span></a>
-						<div id="menu">
-							<ul>
-								<li><a href="#banner" class="scrolly">Home</a></li>
-								<li><a href="#one" class="scrolly">Skills</a></li>
-								<li><a href="#two" class="scrolly">Projects</a></li>
-								<li><a href="#three" class="scrolly">Work History</a></li>
-								<li><a href="#four" class="scrolly">About Me</a></li>
-								<li><a href="#footer" class="scrolly">Contact</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="heroContent">
+            <span class="whiteCircle"></span>
+            <span class="blueCircle"></span>
+            <span class="greenCircle"></span>
+            <span class="lightBlueCircle"></span>
+            <h2 class="staggerLoad">I'll turn your ideas into professional
+                products that you can share with the world</h2>
+            <p class="staggerLoad">Software Engineer - Full Stack Developer</p>
+            <div class="buttonContainer staggerLoad">
+                <a href="#two" class="scrolly button primary">See Work</a>
+                <a href="#four" class="scrolly button secondary">About Me</a>
+            </div>
+        </div>
+        <div class="learnMore">
+            <img class="arrow" src="/assets/images/arrow.svg" alt="" />
+            <a href="#skills" class="scrolly">Learn More</a>
+        </div>
+        <img class="heroGraphic" src="/assets/images/HeroGraphic.svg" alt="" />
+    </section>
 
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<p>Cole Patton</p>
-				<h2>I'll turn your ideas into professional
-					products that you can share with the world</h2>
-				<p>Software Engineer - Full Stack Developer</p>
-				<ul class="actions special">
-					<li><a href="#two" class="scrolly button primary">See Work</a></li>
-					<li><a href="#four" class="scrolly button secondary">About Me</a></li>
-				</ul>
-			</div>
-			<a href="#one" class="more scrolly">Learn More</a>
-		</section>
+    <!-- skills -->
+    <section id="skills" class="skills">
+        <span class="blueCircle"></span>
+        <h2 class="sectionTitle">Skills</h2>
+        <div class="frontendSkills">
+            <h4>Frontend</h4>
+            <p class="skillDescription">I build elagent, responsive websites and apps that are easy to use and beautiful
+                to look at.
+                I can both create my own designs, and bring existing designs to life with HTML, CSS, and
+                JavaScript.
+            </p>
+            <div class="skillIcons">
+                <ul>
+                    <li class="iconAnimate1"><img src="/assets/images/html5update.svg" alt="" />
+                        <p class="skillText">HTML5</p>
+                    </li>
+                    <li class="iconAnimate1"><img src="/assets/images/javascript.svg" alt="" />
+                        <p class="skillText">JavaScript</p>
+                    </li>
+                    <li class="iconAnimate1"><img src="/assets/images/cssupdated.svg" alt="" />
+                        <p class="skillText">CSS</p>
+                    </li>
+                    <li class="iconAnimate1"><img src="/assets/images/react.svg" alt="" />
+                        <p class="skillText">React</p>
+                    </li>
+                    <li class="iconAnimate1"><img src="/assets/images/jquery.svg" alt="" />
+                        <p class="skillText">jQuery</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="backendSkills">
+            <h4>Backend</h4>
+            <p class="skillDescription">I strive to create fast, scalable, and reliable backend systems. I can manage
+                databases,
+                create and comsume APIs, write and analyze algorithms, and anything else needed for a
+                product to operate to perfection.</p>
+            <div class="skillIcons">
+                <h5>Languages</h5>
+                <ul>
+                    <li class="iconAnimate2"><img src="/assets/images/java.svg" alt="" />
+                        <p class="skillText">Java</p>
+                    </li>
+                    <li class="iconAnimate2"><img src="/assets/images/cplusplus.svg" alt="" />
+                        <p class="skillText">C++</p>
+                    </li>
+                    <li class="iconAnimate2"><img src="/assets/images/c.svg" alt="" />
+                        <p class="skillText">C</p>
+                    </li>
+                    <li class="iconAnimate2"><img src="/assets/images/python.svg" alt="" />
+                        <p class="skillText">Python</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="skillIconsWordy">
+                <h5>Databases</h5>
+                <ul>
+                    <li class="iconAnimate3"><img src="/assets/images/mysql.svg" alt="" />
+                        <p class="skillText">MySQL</p>
+                    </li>
+                    <li class="iconAnimate3"><img src="/assets/images/mongodb.svg" alt="" />
+                        <p class="skillText">MongoDB</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="skillIconsWordy">
+                <h5>Libraries/Frameworks</h5>
+                <ul>
+                    <li class="iconAnimate4"><img src="/assets/images/nodejs.svg" alt="" />
+                        <p class="skillText">NodeJS</p>
+                    </li>
+                    <li class="iconAnimate4"><img src="/assets/images/spring.svg" alt="" />
+                        <p class="skillText">Spring</p>
+                    </li>
+                    <li class="iconAnimate4"><img src="/assets/images/spark.svg" alt="" />
+                        <p class="skillText">Spark</p>
+                    </li>
+                    <li class="iconAnimate4">
+                        <h5 class="express">express</h5>
+                        <p class="skillText">Express</p>
+                    </li>
+                    <li class="iconAnimate4"><img src="/assets/images/hadoop.svg" alt="" />
+                        <p class="skillText">Hadoop</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-		<!-- One -->
-		<section id="one" class="wrapper style1 special">
-			<div class="inner">
-				<div class="sectionTitle">
-					<h2>Skills</h2>
-					<div class="underline"></div>
-				</div>
-				<div class="skillContainers">
-					<div>
-						<h2 class="icon fa-code">Frontend</h2>
-						<p>I build elagent, responsive websites and apps that are easy to use and beautiful to look at.
-							I can both create my own designs, and bring existing designs to life with HTML, CSS, and
-							JavaScript.
-						</p>
-						<div class="skillsCard">
-							<ul>
-								<li class="largeIcon"><img src="/assets/css/images/html5.svg" alt="" />
-									<p class="skillText">HTML5</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/javascript.svg" alt="" />
-									<p class="skillText">JavaScript</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/css.svg" alt="" />
-									<p class="skillText">CSS</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/react.svg" alt="" />
-									<p class="skillText">React</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/jquery.svg" alt="" />
-									<p class="skillText">jQuery</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<h2 class="icon fa-database">Backend</h2>
-						<p>I strive to create fast, scalable, and reliable backend systems. I can manage databases,
-							create and comsume APIs, write and analyze algorithms, and anything else needed for a
-							product to operate to perfection.</p>
-						<div class="skillsCard">
-							<h4>Languages</h4>
-							<ul>
-								<li class="largeIcon"><img src="/assets/css/images/java.svg" alt="" />
-									<p class="skillText">Java</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/cplusplus.svg" alt="" />
-									<p class="skillText">C++</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/c.svg" alt="" />
-									<p class="skillText">C</p>
-								</li>
-								<li class="largeIcon"><img src="/assets/css/images/python.svg" alt="" />
-									<p class="skillText">Python</p>
-								</li>
-							</ul>
-						</div>
-						<div class="skillsCard">
-							<h4>Databases</h4>
-							<ul>
-								<li class="smallIcon"><img src="/assets/css/images/mysql.svg" alt="" />
-									<p class="skillText">MySQL</p>
-								</li>
-								<li class="smallIcon"><img src="/assets/css/images/mongodb.svg" alt="" />
-									<p class="skillText">MongoDB</p>
-								</li>
-							</ul>
-						</div>
-						<div class="skillsCard">
-							<h4>Libraries/Frameworks</h4>
-							<ul>
-								<li class="smallIcon"><img src="/assets/css/images/nodejs.svg" alt="" />
-									<p class="skillText">NodeJS</p>
-								</li>
-								<li class="smallIcon"><img src="/assets/css/images/spring.svg" alt="" />
-									<p class="skillText">Spring</p>
-								</li>
-								<li class="smallIcon"><img src="/assets/css/images/spark.svg" alt="" />
-									<p class="skillText">Spark</p>
-								</li>
-								<li class="smallIcon">
-									<h4 class="express">express</h4>
-									<p class="skillText">Express</p>
-								</li>
-								<li class="smallIcon"><img src="/assets/css/images/hadoop.svg" alt="" />
-									<p class="skillText">Hadoop</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <span class="whiteCircle"></span>
+        <span class="blueCircle"></span>
+        <h2 class="sectionTitle">Projects</h2>
+        <div class="project projectAnimate1">
+            <img src="images/Vibe-Share-Thumbnail.jpg" alt="" />
+            <div class="projectContent">
+                <h4>Vibe Share</h4>
+                <p>A typical social media site that utilizes Spotify's API to let users add song clips to their
+                    posts.
+                </p>
+                <p>Full stack application developed with Mongo DB, Express, React, and Node JS.</p>
+                <div class="buttonContainer">
+                    <a class='primary' href="https://vibe-share.herokuapp.com">View
+                        Live</a>
+                    <a class='secondary' href="https://github.com/ColeDPatton/Vibe-share">View
+                        Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project projectAnimate2">
+            <img src="images/Dumb-Gaming-Thumbnail.jpg" alt="" />
+            <div class="projectContent">
+                <h4>DumbGaming</h4>
+                <p>A website with a simple platformer game where players compete for the fastest time
+                    and can create and share their own levels.</p>
+                <p>Full stack application using JavaScript, Express, Node Js.</p>
+                <div class="buttonContainer">
+                    <a class='primary' href="https://www.dumbgaming.com">View
+                        Live</a>
+                    <a class='secondary' href="https://github.com/ColeDPatton/DumbGaming">View
+                        Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project projectAnimate3">
+            <img src="images/IT-Management-Thumbnail.jpg" alt="" />
+            <div class="projectContent">
+                <h4>IT Management Software</h4>
+                <p>A task manager and ticket tracker. Businesses can place tickets,
+                    and stay updated on their progress. Employees can be assigned
+                    to the tickets and update the status as they work on it.</p>
+                <p>A Java program using JFrame/Jpanels for the UI and text files to
+                    store data.</p>
+                <div class="buttonContainer">
+                    <a class='secondary' href="https://github.com/ColeDPatton/IT_Management">View
+                        Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project projectAnimate4">
+            <img src="images/Play-Pal-Thumbnail.jpg" alt="" />
+            <div class="projectContent">
+                <h4>Play Pal</h4>
+                <p>An Android app for users to find people to play video games with.
+                    Filter through users with customizable search preferences, "like" users
+                    who you want to play with, and private message users who also "like" you.
+                </p>
+                <p>Developed the backend of an Android application where users could create profiles and then
+                    search for and chat with other users based on different video games, consoles, and
+                    competitiveness.
+                </p>
+                <div class="buttonContainer">
+                    <a class='secondary'
+                        href="https://github.com/ColeDPatton/Play_Pal/tree/master/Backend/project/src/main/java/com/example/application">
+                        View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Two -->
-		<section id="two" class="wrapper alt style2">
-			<div class="sectionTitle">
-				<h2>Projects</h2>
-				<div class="underline"></div>
-			</div>
-			<section class="spotlight">
-				<div class="image"><img src="images/Vibe-Share-Thumbnail.jpg" alt="" /></div>
-				<div class="content">
-					<h2>Vibe Share</h2>
-					<p>A typical social media site that utilizes Spotify's API to let users add song clips to their
-						posts.
-					</p>
-					<p>Full stack application developed with Mongo DB, Express, React, and Node JS.</p>
-					<div>
-						<ul class="actions special">
-							<li><a class='primary' href="https://vibe-share.herokuapp.com">View
-									Live</a></li>
-							<li><a class='secondary' href="https://github.com/ColeDPatton/Vibe-share">View
-									Code</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/Dumb-Gaming-Thumbnail.jpg" alt="" /></div>
-				<div class="content">
-					<h2>DumbGaming</h2>
-					<p>A website with a simple platformer game where players compete for the fastest time
-						and can create and share their own levels.</p>
-					<p>Full stack application using JavaScript, Express, Node Js.</p>
-					<div>
-						<ul class="actions special">
-							<li><a class='primary' href="https://www.dumbgaming.com">View
-									Live</a></li>
-							<li><a class='secondary' href="https://github.com/ColeDPatton/DumbGaming">View
-									Code</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/IT-Management-Thumbnail.jpg" alt="" /></div>
-				<div class="content">
-					<h2>IT Management Software</h2>
-					<p>A task manager and ticket tracker. Businesses can place tickets,
-						and stay updated on their progress. Employees can be assigned
-						to the tickets and update the status as they work on it.</p>
-					<p>A Java program using JFrame/Jpanels for the UI and text files to
-						store data.</p>
-					<div>
-						<a class='secondary' href="https://github.com/ColeDPatton/IT_Management">View
-							Code</a>
-					</div>
-				</div>
-			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/Play-Pal-Thumbnail.jpg" alt="" /></div>
-				<div class="content">
-					<h2>Play Pal</h2>
-					<p>An Android app for users to find people to play video games with.
-						Filter through users with customizable search preferences, "like" users
-						who you want to play with, and private message users who also "like" you.
-					</p>
-					<p>Developed the backend of an Android application where users could create profiles and then
-						search for and chat with other users based on different video games, consoles, and
-						competitiveness.
-					</p>
-					<div>
-						<a class='secondary'
-							href="https://github.com/ColeDPatton/Play_Pal/tree/master/Backend/project/src/main/java/com/example/application">
-							View Code</a>
-					</div>
-				</div>
-			</section>
-		</section>
+    <!-- Work History -->
+    <section id="workHistory" class="workHistory">
+        <span class="blueCircle"></span>
+        <span class="blueCircle"></span>
+        <span class="blueCircle"></span>
+        <span class="blueCircle"></span>
+        <span class="blueCircle"></span>
+        <h2 class="sectionTitle">Work History</h2>
+        <div class="job">
+            <div class="jobContent">
+                <p class="date">05/19-07/19</p>
+                <h4 class='jobTitle'>STATS PERFORM - Software Engineer</h4>
+                <p class="jobName">STATS Widgets (React, Node JS)</p>
+                <ul class="jobDescription">
+                    <li>
+                        <p>Worked as a fully integrated member of the companies Widgets
+                            team to develop stand alone, visually appealing widgets to display sports data
+                            and increase user interaction on customers’ websites and apps.</p>
+                    </li>
+                    <li>
+                        <p>Widgets were developed with Node JS in an Agile environment using TDD and
+                            paired programming.</p>
+                    </li>
+                    <li>
+                        <p>Wrote Unit and Integration tests, API calls, and applied basic CSS to display
+                            data.</p>
+                    </li>
+                    <li>
+                        <p>Focused mainly on two widgets that both went live at the end of the internship.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <img src="https://o7dkx1gd2bwwexip1qwjpplu-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/PRBANNER-widgets-1000x380.jpg"
+                alt='' class='image' />
+        </div>
+        <div class="job">
+            <div class="jobContent">
+                <p class="date">07/19-09/19</p>
+                <h4 class='jobTitle'>STATS PERFORM - Software Engineer</h4>
+                <p class="jobName">Amazon Alexa - Sports Bot (Java)</p>
+                <ul class="jobDescription">
+                    <li>
+                        <p>Created an Alexa Skill written in Java and running on AWS Lambda
+                            that massively
+                            improved upon Alexa’s default capabilities in answering sports related
+                            questions.</p>
+                    </li>
+                    <li>
+                        <p>Queried the API for relevant data and constructed responses.</p>
+                    </li>
+                    <li>
+                        <p>Implements caching to greatly speed up the response time.</p>
+                    </li>
+                    <li>
+                        <p>The Alexa Skill was demonstrated to Amazon to show them how to better utilize
+                            STATS Perform data shortly after the internship.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-		<!-- Three -->
-		<section id="three" class="wrapper style3 special">
-			<div class="inner">
-				<header class="sectionTitle">
-					<h2>Work History</h2>
-					<div class="underline"></div>
-				</header>
-				<ul class="features">
-					<li>
-						<p>05/19-07/19</p>
-						<div class='JobTitle'>
-							<h3 class='StatsPerform'>STATS PERFORM</h3>
-							<p>Software Engineer Intern</p>
-						</div>
-						<div>
-							<img src="https://o7dkx1gd2bwwexip1qwjpplu-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/PRBANNER-widgets-1000x380.jpg"
-								alt='' class='image' />
-							<p class="projectName">STATS Widgets (React, Node JS)</p>
-							<ul class="jobDescription">
-								<li>
-									<p>Worked as a fully integrated member of the companies Widgets
-										team to develop stand alone, visually appealing widgets to display sports data
-										and increase user interaction on customers’ websites and apps.</p>
-								</li>
-								<li>
-									<p>Widgets were developed with Node JS in an Agile environment using TDD and
-										paired programming.</p>
-								</li>
-								<li>
-									<p>Wrote Unit and Integration tests, API calls, and applied basic CSS to display
-										data.</p>
-								</li>
-								<li>
-									<p>Focused mainly on two widgets that both went live at the end of the internship.
-									</p>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<p>07/19-09/19</p>
-						<div class='JobTitle'>
-							<h3 class='StatsPerform'>STATS PERFORM</h3>
-							<p>Software Engineer Intern</p>
-						</div>
-						<div>
-							<p class="projectName">Amazon Alexa - Sports Bot (Java)</p>
-							<ul class="jobDescription">
-								<li>
-									<p>Created an Alexa Skill written in Java and running on AWS Lambda
-										that massively
-										improved upon Alexa’s default capabilities in answering sports related
-										questions.</p>
-								</li>
-								<li>
-									<p>Queried the API for relevant data and constructed responses.</p>
-								</li>
-								<li>
-									<p>Implements caching to greatly speed up the response time.</p>
-								</li>
-								<li>
-									<p>The Alexa Skill was demonstrated to Amazon to show them how to better utilize
-										STATS Perform data shortly after the internship.</p>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<header class="sectionTitle">
-							<h2>Education</h2>
-							<div class="underline"></div>
-						</header>
-					</li>
-					<li>
-						<h3 class='StatsPerform'>Iowa State University</h3>
-						<p>Bachelor of Science, Software Engineering</p>
-						<p> Expected Graduation: December 2020</p>
-						<div>
-							<p class='projectName'>Relevant Courses</p>
-							<p>Data Structures, Database Management Systems, Software Construction & User Interface,
-								Software Architecture & Design, Intro to Operating Systems, Object Oriented Analysis &
-								Design</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+    <!-- About Me -->
+    <section id="aboutMe" class="aboutMe">
+        <div class="whiteCircle">
+            <h2 class="sectionTitle">About Me</h2>
+        </div>
+        <img class="imageMe" src="/images/ColePatton.jpg" alt="" />
+        <div class="textContainer">
+            <h4>Cole Patton</h4>
+            <p>Senior, Software Engineering student at Iowa State University with a strong foundation in
+                Software Development and Object-Oriented Programming. Experienced in designing, developing,
+                testing, and debugging programs in Java, JavaScript, and C++. Developed multiple full stack
+                projects both on my own and with a team.</p>
+        </div>
+    </section>
 
-		<!-- About Me -->
-		<section id="four" class="wrapper style4">
-			<div class="inner">
-				<header>
-					<div class="imageContainer">
-						<img class="image" src="/images/ColePatton.jpg" alt="" />
-					</div>
-					<div class="textContainer">
-						<h2>Cole Patton</h2>
-						<p>Senior, Software Engineering student at Iowa State University with a strong foundation in
-							Software Development and Object-Oriented Programming. Experienced in designing, developing,
-							testing, and debugging programs in Java, JavaScript, and C++. Developed multiple full stack
-							projects both on my own and with a team.</p>
-					</div>
-				</header>
-			</div>
-		</section>
+    <!-- Contact Me -->
+    <section id="contactMe" class="contactMe">
+        <span class="blueCircle"></span>
+        <span class="blueCircle"></span>
+        <span class="whiteCircle"></span>
+        <span class="whiteCircle"></span>
+        <h2 class="sectionTitle">Contact Me</h2>
+        <form action="https://formspree.io/mqkygnry" method="POST">
+            <div class="nameField">
+                <label id=nameLabel>Name</label>
+                <input type="text" name="name" id="name" value="" placeholder="Name" aria-labelledby="nameLabel">
+            </div>
+            <div class="emailField">
+                <label id=emailLabel>Email</label>
+                <input type="text" name="replyto" id="email" value="" placeholder="Email" aria-labelledby="emailLabel">
+            </div>
+            <div class="messageField">
+                <label id=messageLabel>Message</label>
+                <textarea name="message" id="message" placeholder="Enter your message" rows="6"
+                    aria-labelledby="messageLabel"></textarea>
+            </div>
+            <div class="buttonContainer">
+                <button type="submit" class="primary">Send</button>
+                <button type="reset" class="secondary">Reset</button>
+            </div>
+        </form>
+    </section>
+    <section class="footer">
+        <ul class="footerLinks">
+            <li><a href="https://github.com/ColeDPatton/" aria-label="Github">
+                    <i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/cole-d-patton/" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:patton1502@gmail.com" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="copyright">
+            <p>© Cole Patton</p>
+            <p>2020</p>
+        </div>
+    </section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="sectionTitle">
-				<h2>Contact Me</h2>
-				<div class="underline"></div>
-			</div>
-			<form action="https://formspree.io/mqkygnry" method="POST">
-				<div class="row gtr-uniform">
-					<div class="col-6 col-12-xsmall">
-						<label id=nameLabel>Name</label>
-						<input type="text" name="name" id="name" value="" placeholder="Name"
-							aria-labelledby="nameLabel">
-					</div>
-					<div class="col-6 col-12-xsmall">
-						<label id=emailLabel>Email</label>
-						<input type="text" name="replyto" id="email" value="" placeholder="Name"
-							aria-labelledby="emailLabel">
-					</div>
-					<div class="col-12">
-						<label id=messageLabel>Message</label>
-						<textarea name="message" id="message" placeholder="Enter your message" rows="6"
-							aria-labelledby="messageLabel"></textarea>
-					</div>
-					<div class="col-12">
-						<ul class="actions">
-							<li><button type="submit" class="primary">Send</button></li>
-							<li><input type="reset" value="Reset"></li>
-						</ul>
-					</div>
-				</div>
-			</form>
-			<ul class="icons">
-				<li><a href="https://github.com/ColeDPatton/" class="icon brands fa-github" aria-label="Github">
-						<span class="label">GitHub</span></a></li>
-				<li><a href="https://www.linkedin.com/in/cole-d-patton/" class="icon brands fa-linkedin"
-						aria-label="LinkedIn">
-						<span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:patton1502@gmail.com" class="icon solid fa-envelope" aria-label="Email">
-						<span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>© Cole Patton</li>
-				<li>2020</li>
-				<li>Initial Design: <a href="http://html5up.net/spectral">HTML5 UP</a></li>
-			</ul>
-		</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
-	</div>
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+        var t1 = gsap.timeline();
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+        gsap.from(".staggerLoad", {
+            y: "-50%",
+            opacity: 0,
+            stagger: .4,
+            duration: 1,
+            ease: Power4.easeOut
+        });
+
+        gsap.from(".iconAnimate1", {
+            scrollTrigger: {
+                trigger: ".iconAnimate1",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            stagger: .4,
+            duration: .5,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".iconAnimate2", {
+            scrollTrigger: {
+                trigger: ".iconAnimate2",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            stagger: .4,
+            duration: .5,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".iconAnimate3", {
+            scrollTrigger: {
+                trigger: ".iconAnimate3",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            stagger: .4,
+            duration: .5,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".iconAnimate4", {
+            scrollTrigger: {
+                trigger: ".iconAnimate4",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            stagger: .4,
+            duration: .5,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+
+        gsap.from(".projectAnimate1", {
+            scrollTrigger: {
+                trigger: ".projectAnimate1",
+                start: "top 70%"
+            },
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".projectAnimate2", {
+            scrollTrigger: {
+                trigger: ".projectAnimate2",
+                start: "top 70%"
+            },
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".projectAnimate3", {
+            scrollTrigger: {
+                trigger: ".projectAnimate3",
+                start: "top 70%"
+            },
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+        gsap.from(".projectAnimate4", {
+            scrollTrigger: {
+                trigger: ".projectAnimate4",
+                start: "top 70%"
+            },
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            ease: Power4.easeOut
+        });
+
+    </script>
+    <script src="https://use.fontawesome.com/dbfc919769.js"></script>
 
 </body>
 
