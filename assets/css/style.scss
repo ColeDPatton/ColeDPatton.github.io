@@ -275,7 +275,10 @@ h4 {
     align-items: center;
     text-align: center;
     margin: 4em 0 0;
-    
+    .stack {
+        margin-top: 12px;
+        color: #b2b2ec
+    }
     .buttonContainer {
         margin-top: 2em;
         margin-bottom: 2em;
@@ -542,8 +545,8 @@ form {
         transform: rotateZ(-90deg);
         margin-left: -4.5em;
         margin-bottom: 3em;
-        // animation: learnMoreAnimate 1s infinite alternate-reverse;
-        animation: learnMoreAnimate 1s alternate-reverse;
+        animation: learnMoreAnimate 1s infinite alternate-reverse;
+        // animation: learnMoreAnimate 1s alternate-reverse;
     }
     @-webkit-keyframes learnMoreAnimate {
         from {bottom: 40px;}
