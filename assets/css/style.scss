@@ -421,6 +421,24 @@ form {
     justify-content: space-around;
 }
 
+@media screen and (max-width: 300px) {
+    .hero {
+        .primary, .secondary {
+            padding: .7em 1.0em;
+            width: 32%;
+        }
+    }
+    .aboutMe {
+        .whiteCircle, .imageMe {
+            width: 100px;
+            height: 100px;
+            top: -50px;
+        }
+        .imageMe {
+            left: 100px;
+        }
+    }
+}
 @media screen and (min-width: 300px) {
     .header {
         padding: .5em 2em;
@@ -448,6 +466,14 @@ form {
     }
     .express {
         font-size: 1.1em;
+    }
+    .aboutMe {
+        .whiteCircle {
+            left: 69px;
+        }
+        .imageMe {
+            left: 209px;
+        }
     }
 }
 
@@ -652,7 +678,7 @@ form {
 
     //About Me
     .aboutMe {
-        padding: 3em 4em 6em 12.4em;
+        padding: 3em 4em 6em 16.4em;
 
         .whiteCircle, .imageMe {
             width: 180px;
@@ -660,10 +686,10 @@ form {
             top: -90px;
         }
         .whiteCircle {
-            left: 180px;
+            left: 244px;
         }
         .imageMe {
-            left: 0;
+            left: 64px;
         }
         .textContainer {
             position: relative;
