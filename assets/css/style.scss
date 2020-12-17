@@ -673,6 +673,7 @@ form {
             margin-left: auto;
             margin-right: 0;
             width: 40%;
+            max-width: 500px;
         }
     }
 
@@ -884,7 +885,7 @@ form {
     }
 
     .header {
-        padding: 1.2em 10em;
+        padding: 1.2em 14em;
         .desktopNav li {
             font-size: 1.2em;
         }
@@ -897,7 +898,7 @@ form {
         margin-top: 4em;
     }
     .heroContent {
-        padding: 12em 14em 0 10em;
+        padding: 12em 16em 0 14em;
         h2 {
             font-size: 2.8em;
         }
@@ -912,7 +913,7 @@ form {
         height: 250px;
     }
     .skills {
-        padding: 8em 34% 6em 10em;
+        padding: 8em 34% 6em 14em;
         h4 {
             font-size: 1.6em;
         }
@@ -939,7 +940,7 @@ form {
     }
 
     .projects {
-        padding: 10em;
+        padding: 10em 14em;
         .blueCircle, .whiteCircle {
             height: 160px;
             width: 160px;
@@ -957,7 +958,7 @@ form {
     }
 
     .workHistory {
-        padding: 10em 10em 14em;
+        padding: 10em 14em 14em;
         .blueCircle {
             height: 120px;
             width: 120px;
@@ -990,22 +991,22 @@ form {
     }
 
     .aboutMe {
-        padding: 6em 10em 10em 27.8em;
+        padding: 6em 14em 10em 31.8em;
         .imageMe, .whiteCircle {
             width: 250px;
             height: 250px;
             top: -125px;
         }
         .imageMe {
-            left: 160px;
+            left: 224px;
         }
         .whiteCircle {
-            left: 410px;
+            left: 474px;
         }
     }
 
     .contactMe {
-        padding: 10em;
+        padding: 14em;
         padding-bottom: 6em;
         form {
             font-size: 1.5em;
@@ -1044,64 +1045,39 @@ form {
             top: 150px;
         }
     }
+
+    .copyright {
+        width: 210px;
+    }
 }
 
 
 @media screen and (min-width: 2000px) {
-    p {
-        font-size: 1.8em;
-    }
-    h4 {
-        font-size: 2.2em;
-    }
-    .sectionTitle {
-        font-size: 3em;
-    }
+
     .buttonContainer .primary, .buttonContainer .secondary {
-        font-size: 1.4em;
         width: 20%;
     }
 
     .header {
-        padding: 1.4em 16em;
-        .desktopNav li {
-            font-size: 1.4em;
-        }
+        padding: 1.4em 30em;
     }
-    .name {
-        font-size: 2em;
-    }
-
     .heroContent {
-        padding: 22em 20em 0 16em;
-        h2 {
-            font-size: 3.6em;
-        }
-        p {
-            font-size: 2em;
-        }
+        padding: 20vh 30% 0 30em;
         .buttonContainer .primary, .buttonContainer .secondary {
-            font-size: 1.4em;
             padding: 1em 1em;
         }
     }
     .learnMore {
-        font-size: 2.2em;
         margin-bottom: 6em;
     }
 
     .skills::before {
         width: 350px;
         height: 350px;
+        left: 15em;
     }
     .skills {
-        padding: 10em 34% 6em 16em;
-        h4 {
-            font-size: 2.2em;
-        }
-        h5:not(.express) {
-            font-size: 1.8em;
-        }
+        padding: 12em 34% 8em 30em;
         ul {
             max-width: 1000px;
         }
@@ -1114,7 +1090,13 @@ form {
     }
 
     .projects {
-        padding: 12em 16em;
+        padding: 12em 30em;
+        .whiteCircle {
+            left: 30em;
+        }
+        .blueCircle {
+            left: calc(30em + 160px);
+        }
         h4 {
             margin-bottom: .6em;
         }
@@ -1124,40 +1106,94 @@ form {
     }
 
     .workHistory {
-        padding: 12em 16em 14em;
+        padding: 12em 30em 14em;
+        .blueCircle:nth-of-type(1){
+            right: 30em;
+            left: auto;
+        }
+        .blueCircle:nth-of-type(2){
+            right: calc(30em + 120px);
+        }
+        .blueCircle:nth-of-type(3){
+            right: 30em;
+        }
+        .blueCircle:nth-of-type(4){
+            right: calc(30em + 120px);
+        }
+        .blueCircle:nth-of-type(5){
+            right: calc(30em + 240px);
+        }
     }
 
     .aboutMe {
-        padding: 8em 16em 12em 37em;
-        .imageMe, .whiteCircle {
-            width: 300px;
-            height: 300px;
-            top: -150px;
-        }
+        padding: 10em 30em 12em 47.5em;
         .whiteCircle {
-            left: 556px;
+            left: 730px;
         }
         .imageMe {
-            left: 256px;
+            left: 480px;
         }
     }
 
     .contactMe {
-        padding: 12em 16em 8em 16em;
+        padding: 12em 30em 8em 30em;
         form {
-            font-size: 1.8em;
             input, textarea {
                 padding: .6em;
-                font-size: 1em;
             }
             .buttonContainer .primary, .buttonContainer .secondary {
-                font-size: 1.2em;
                 width: 30%;
             }
+        }
+        .blueCircle:nth-of-type(1){
+            right: calc(30em + 100px);
+        }
+        .blueCircle:nth-of-type(2){
+            right: calc(30em + 200px);
+        }
+        .whiteCircle:nth-of-type(3){
+            right: 30em;
+        }
+        .whiteCircle:nth-of-type(4){
+            right: calc(30em + 100px);
         }
     }
 }
 
+
+@media screen and (min-width: 3000px) {
+
+    .header {
+        padding: 1.4em 30%;
+    }
+    .heroContent {
+        padding: 20vh 30% 0 45%;
+    }
+    .learnMore {
+        margin-bottom: 6em;
+    }
+    .skills {
+        padding: 12em 34% 8em 30%;
+    }
+    .projects {
+        padding: 12em 30%;
+    }
+    .workHistory {
+        padding: 12em 30% 14em;
+    }
+    .aboutMe {
+        padding: 10em 30% 12em calc(30% + 280px);
+        .whiteCircle {
+            left: calc(30% + 250px);
+        }
+        .imageMe {
+            left: 30%;
+        }
+    }
+    .contactMe {
+        padding: 12em 30% 8em 30%;
+    }
+}
 
 
 
@@ -1359,24 +1395,25 @@ form {
         span {
             height: 12em;
             width: 12em;
-            border-radius: 50%;
         }
         .whiteCircle {
             left: 100%;
             margin-left: -6em;
-            top: 10em;
+            top: 20vh;
+            margin-top: -12em;
         }
         .blueCircle {
             margin-left: -6em;
-            top: 22em;
+            top: 20vh;
         }
         .greenCircle {
             margin-left: 18em;
-            top: 22em;
+            top: 20vh;
         }
         .lightBlueCircle {
             margin-left: 6em;
-            top: 34em;
+            top: 20vh;
+            margin-top: 12em;
             z-index: -1;
             -webkit-animation-name: lightBlueMove;
             -webkit-animation-duration: 2s;
@@ -1385,12 +1422,12 @@ form {
         }
         @-webkit-keyframes lightBlueMove {
             0% {top: 0}
-            100% {top: 34em;}
+            100% {top: 20vh;}
         }
 
         @keyframes lightBlueMove {
             0% {top: -10vh}
-            100% {top: 34em;}
+            100% {top: 20vh;}
         }
     }
 }
